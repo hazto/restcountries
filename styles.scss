@@ -1,4 +1,4 @@
-﻿body {
+body {
     text-align: center;
 }
 
@@ -17,11 +17,6 @@ input {
 .suggested {
     max-height: 10px;
 
-    /*&.has-results {
-        max-height: 100%;
-        transition: max-height .5s;
-    }*/
-
     &__suggestion {
         border: solid 1px white;
         background-color: whitesmoke;
@@ -38,6 +33,7 @@ input {
         }
 
         &.hidden {
+            color: whitesmoke;
             max-height: 0;
             opacity: 0;
         }
@@ -55,7 +51,7 @@ input {
             &__flag {
                 width: 100%;
                 height: 50%;
-                margin-top:16px;
+                margin-top: 16px;
             }
 
             span {
@@ -66,4 +62,21 @@ input {
     }
 }
 
+@media (max-width: 1040px) {
+    .suggested {
+        max-height: 10px;
+
+        &__suggestion {
+            border: solid 1px white;
+            background-color: whitesmoke;
+            opacity: 1;
+            transition: opacity .3s ease, font-size .5s ease .5s;
+
+            &.selected {
+                font-size: 24px;
+                border: none;
+            }
+        }
+    }
+}
 
