@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Find a Country</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Find a Country by Name</h1>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-8">
+                <input id="search" placeholder="Type a name of a country..." autofocus />
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <ul class="col-lg-8 suggested" id="suggested"></ul>
+            <div class="col"></div>
+        </div>
+    </main>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script id="suggestionTemplate" type="text/html">
+        <li class="suggested__suggestion"></li>
+    </script>
+    <script id="resultTemplate" type="text/html">
+        <div class="search-result row">
+            <div class="col"></div>
+            <img class="search-result__flag col-lg-5 col-sm-12" src="" />
+            <div class="col-lg-6 col-sm-12">
+                <div class="search-result__name">
+                    <label>Country Names and Translations:</label>
+                    <br />
+                    <div class="value"></div>
+                </div>
+                <div class="search-result__capital">
+                    <label>Capital:</label>
+                    <span class="value"></span>
+                </div>
+                <div class="search-result__population">
+                    <label>Population:</label>
+                    <span class="value"></span>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="nameTranslationTemplate" type="text/html">
+        <div class="value"></div>
+    </script>
+</body>
+</html>
