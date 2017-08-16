@@ -23,7 +23,7 @@ input {
       font-size: 44px;
       border: none; }
     .suggested__suggestion.hidden {
-      color: whitesmoke;
+      color: transparent;
       max-height: 0;
       opacity: 0; }
     .suggested__suggestion .search-result {
