@@ -12,6 +12,10 @@ input {
 
 .suggested {
   max-height: 10px;
+  /*&.has-results {
+        max-height: 100%;
+        transition: max-height .5s;
+    }*/ }
   .suggested__suggestion {
     border: solid 1px white;
     background-color: whitesmoke;
@@ -23,6 +27,7 @@ input {
       font-size: 44px;
       border: none; }
     .suggested__suggestion.hidden {
+      color: whitesmoke;
       max-height: 0;
       opacity: 0; }
     .suggested__suggestion .search-result {
@@ -35,7 +40,8 @@ input {
       .suggested__suggestion .search-result__flag {
         width: 100%;
         height: 50%;
-        margin-top:16px; }
+        margin-top: 16px; }
       .suggested__suggestion .search-result span {
         clear: right;
         text-align: left; }
+
